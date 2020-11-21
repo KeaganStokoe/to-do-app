@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>To-do Demo</title>
+        <link href="/styles/styles.css" rel="stylesheet">
+        <link href="/images/favicon.png?v=1" rel="icon">
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="container">
+                <h1 class="header__title">Do More</h1>
+                <h2 class="header__subtitle">Build productivity, not lists.</h2>
+            </div>
+        </div>
+
+        <div class="actions">
+            <div class="actions__container">
+                <input id="search-todos" class="input" type="text" placeholder="Search your todos"> 
+                <label class="checkbox">
+                    <input id="hide-completed" type="checkbox"> Hide Completed Todos
+                </label>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="todos"></div>
+            <form id="todo-input">
+                <input type="text" class="input" placeholder="Enter your new todo" name="enterTodo">
+                <button class="button">Submit</button>
+            </form>
+        </div>
+        
+        <script src="/scripts/uuidv4.js"></script>
+        <script src="/scripts/todo-functions.js"></script>
+        <script src="/scripts/todo-app.js"></script>
+    </body>
